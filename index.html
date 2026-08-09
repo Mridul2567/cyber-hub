@@ -1,69 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  .hero {
-  background: linear-gradient(rgba(0,20,60,.75), rgba(0,20,80,.85)),
-              url('cyber-hub-website-image.png') center/cover;
-  padding: 70px 20px;
-  text-align: center;
-  color: white;
-}
 
-.hero h1 {
-  font-size: 48px;
-  margin: 10px 0;
-}
-
-.hero h1 span {
-  color: #00eaff;
-}
-
-.hero p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.founder {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 18px;
-  background: rgba(0,0,0,.45);
-  border: 1px solid #00eaff;
-  border-radius: 20px;
-  font-weight: bold;
-}
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>Cyber Hub Samastipur | Online & Computer Services</title>
 
-<meta name="description" content="Cyber Hub Online Center, Samastipur Bihar - Online Form, Education, Document, Printing, Photo & Design and Computer Services.">
+<meta name="description"
+content="Cyber Hub Online Center in Samastipur, Bihar. Online form, computer, document, printing, photo & design, education and digital services. Contact Cyber Hub today.">
 
-<meta name="robots" content="index, follow">
+<meta name="keywords"
+content="Cyber Hub, Cyber Hub Samastipur, online service center Samastipur, computer service Samastipur, online form Samastipur, printing Samastipur, Cyber Cafe Samastipur">
 
-<link rel="canonical" href="https://mridul2567.github.io/cyber-hub/">
+<meta name="author"
+content="Rdx Abhishek - Cyber Hub">
+
+<meta name="robots"
+content="index, follow">
+
+<link rel="canonical"
+href="https://mridul2567.github.io/cyber-hub/">
 
 <!-- Local Business Schema -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"LocalBusiness",
-  "name":"Cyber Hub",
-  "alternateName":"Cyber Hub Online Center",
-  "url":"https://mridul2567.github.io/cyber-hub/",
-  "telephone":"+91-8873301032",
-  "description":"Online and computer services in Samastipur, Bihar.",
-  "address":{
-    "@type":"PostalAddress",
-    "addressLocality":"Samastipur",
-    "addressRegion":"Bihar",
-    "addressCountry":"IN"
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Cyber Hub",
+  "alternateName": "Cyber Hub Online Center",
+  "url": "https://mridul2567.github.io/cyber-hub/",
+  "telephone": "+918873301032",
+  "description": "Cyber Hub Online Center provides online, computer, document, printing, photo, design, education and digital services in Samastipur, Bihar.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Samastipur",
+    "addressRegion": "Bihar",
+    "addressCountry": "IN"
   },
-  "areaServed":{
-    "@type":"City",
-    "name":"Samastipur"
+  "areaServed": {
+    "@type": "City",
+    "name": "Samastipur"
   },
-  "sameAs":[
+  "sameAs": [
     "https://www.instagram.com/abhi.cyber_hub/"
   ]
 }
@@ -72,510 +53,827 @@
 <style>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#061633;
-  color:white;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f8ff;
+    color:#172554;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#061b52;
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    text-decoration:none;
+}
+
+.logo-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#0756c9;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.logo-text h2{
+    font-size:20px;
+    line-height:1.1;
+}
+
+.logo-text span{
+    font-size:11px;
+    color:#b9d5ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#61dafb;
+}
+
+@media(max-width:750px){
+
+.nav-links{
+    display:none;
+}
+
+.navbar{
+    padding:10px 15px;
+}
+
 }
 
 /* HERO */
 
 .hero{
-  min-height:430px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:50px 20px;
-  background:
-    linear-gradient(135deg,#061633,#073b91,#061633);
+    min-height:620px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:70px 20px;
+    position:relative;
+    background:
+    linear-gradient(rgba(3,20,55,.78),rgba(0,44,130,.88)),
+    url('cyber-hub-website-image.png') center/cover no-repeat;
 }
 
 .hero-content{
-  max-width:900px;
+    max-width:900px;
+    animation:fadeUp 1s ease;
 }
 
-.badge{
-  display:inline-block;
-  background:rgba(255,255,255,.12);
-  border:1px solid rgba(255,255,255,.2);
-  padding:9px 18px;
-  border-radius:30px;
-  margin-bottom:20px;
-  font-size:14px;
+.location{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:30px;
+    background:rgba(255,255,255,.12);
+    margin-bottom:20px;
+    font-weight:bold;
 }
 
 .hero h1{
-  font-size:52px;
-  margin-bottom:15px;
-  font-weight:800;
+    font-size:clamp(42px,7vw,75px);
+    line-height:1.05;
+    margin-bottom:18px;
+    font-weight:900;
 }
 
 .hero h1 span{
-  color:#35d3ff;
+    color:#54e5ff;
 }
 
-.hero p{
-  font-size:19px;
-  line-height:1.7;
-  color:#dbeafe;
-  margin-bottom:28px;
+.hero-subtitle{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:8px;
 }
 
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
+.hero-description{
+    max-width:700px;
+    margin:0 auto 25px;
+    color:#e3efff;
+    font-size:17px;
+}
+
+.founder{
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:25px;
+    color:#ffffff;
+}
+
+.founder span{
+    color:#ffd84d;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
 }
 
 .btn{
-  display:inline-block;
-  text-decoration:none;
-  padding:14px 25px;
-  border-radius:30px;
-  font-weight:bold;
-  color:white;
-  transition:.3s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:13px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
 
 .btn:hover{
-  transform:translateY(-4px);
+    transform:translateY(-4px);
 }
 
 .whatsapp{
-  background:#25D366;
+    background:#25D366;
 }
 
 .call{
-  background:#1677ff;
+    background:#1689ff;
 }
 
 .instagram{
-  background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
-
-/* IMAGE */
-
-.website-image{
-  width:100%;
-  max-width:1200px;
-  margin:auto;
-}
-
-.website-image img{
-  width:100%;
-  display:block;
+    background:linear-gradient(45deg,#ffb300,#ff0058,#833ab4);
 }
 
 /* SECTION */
 
-.section{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
-  text-align:center;
+section{
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
 }
 
 .section-title{
-  font-size:34px;
-  margin-bottom:12px;
+    text-align:center;
+    margin-bottom:40px;
 }
 
-.section-subtitle{
-  color:#b9c7df;
-  margin-bottom:35px;
-  line-height:1.6;
+.section-title h2{
+    font-size:34px;
+    color:#092d75;
+}
+
+.section-title p{
+    color:#60708d;
 }
 
 /* SERVICES */
 
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
 }
 
-.card{
-  background:linear-gradient(145deg,#102a57,#071b3b);
-  padding:28px 20px;
-  border-radius:18px;
-  border:1px solid rgba(255,255,255,.08);
-  transition:.3s;
+.service-card{
+    background:white;
+    padding:28px 20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(18,57,120,.1);
+    transition:.3s;
+    border:1px solid #e5edff;
 }
 
-.card:hover{
-  transform:translateY(-8px);
-  border-color:#35d3ff;
+.service-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 30px rgba(18,57,120,.18);
 }
 
-.icon{
-  font-size:40px;
-  margin-bottom:15px;
+.service-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#e9f2ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
 }
 
-.card h3{
-  margin-bottom:10px;
-  font-size:20px;
+.service-card h3{
+    color:#0a3a91;
+    margin-bottom:8px;
+    font-size:19px;
 }
 
-.card p{
-  color:#b9c7df;
-  line-height:1.6;
-  font-size:14px;
+.service-card p{
+    color:#68758b;
+    font-size:14px;
+}
+
+@media(max-width:900px){
+.services-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:500px){
+.services-grid{
+    grid-template-columns:1fr;
+}
 }
 
 /* WHY US */
 
 .why{
-  background:#071b3b;
+    background:#eaf2ff;
 }
 
 .why-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
 }
 
 .why-card{
-  padding:25px 15px;
-  background:#0c2853;
-  border-radius:15px;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
 }
 
 .why-card strong{
-  display:block;
-  margin-top:10px;
+    display:block;
+    font-size:18px;
+    color:#0a3a91;
+    margin-bottom:6px;
+}
+
+.why-card span{
+    font-size:30px;
+}
+
+@media(max-width:800px){
+.why-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:500px){
+.why-grid{
+    grid-template-columns:1fr;
+}
 }
 
 /* ABOUT */
 
 .about{
-  max-width:900px;
-  margin:auto;
-  line-height:1.8;
-  color:#dbeafe;
+    background:white;
+}
+
+.about-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-box p{
+    color:#5f6f88;
+    margin-bottom:15px;
 }
 
 /* CTA */
 
 .cta{
-  padding:65px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#0754c9,#08285b);
+    background:linear-gradient(135deg,#06235f,#0878df);
+    color:white;
+    text-align:center;
 }
 
 .cta h2{
-  font-size:35px;
-  margin-bottom:15px;
+    font-size:35px;
+    margin-bottom:10px;
 }
 
 .cta p{
-  color:#dbeafe;
-  margin-bottom:25px;
+    margin-bottom:25px;
+    color:#e1efff;
 }
 
-/* FAQ */
+/* CONTACT */
 
-.faq{
-  max-width:800px;
-  margin:auto;
-  text-align:left;
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
-details{
-  background:#0d2851;
-  margin:12px 0;
-  padding:18px 20px;
-  border-radius:12px;
+.contact-card{
+    background:white;
+    padding:28px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 7px 25px rgba(0,0,0,.08);
 }
 
-summary{
-  cursor:pointer;
-  font-weight:bold;
+.contact-card .icon{
+    font-size:32px;
+    margin-bottom:10px;
 }
 
-details p{
-  color:#cbd5e1;
-  margin-top:12px;
-  line-height:1.6;
+.contact-card h3{
+    color:#0a3a91;
+}
+
+.contact-card a{
+    color:#1264c8;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media(max-width:700px){
+.contact-grid{
+    grid-template-columns:1fr;
+}
 }
 
 /* FOOTER */
 
 footer{
-  background:#030d20;
-  text-align:center;
-  padding:30px 15px;
-  color:#aebbd0;
+    background:#041536;
+    color:white;
+    padding:45px 20px 20px;
+}
+
+.footer-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
 }
 
 footer h3{
-  color:white;
-  margin-bottom:8px;
+    margin-bottom:12px;
+}
+
+footer p,
+footer li{
+    color:#c4d5f1;
+    font-size:14px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:7px;
+}
+
+footer a{
+    color:#c4d5f1;
+    text-decoration:none;
+}
+
+.social{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.social a{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#123d80;
+}
+
+.copyright{
+    max-width:1100px;
+    margin:30px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    color:#9eb4d6;
+    font-size:13px;
+}
+
+@media(max-width:700px){
+.footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.social{
+    justify-content:center;
+}
 }
 
 /* FLOATING WHATSAPP */
 
-.floating-whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#25D366;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  font-size:29px;
-  box-shadow:0 5px 20px rgba(0,0,0,.4);
-  z-index:999;
+.float-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    z-index:999;
+    animation:pulse 2s infinite;
 }
 
-/* MOBILE */
-
-@media(max-width:800px){
-
-  .hero h1{
-    font-size:38px;
-  }
-
-  .services{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .why-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);}
+    70%{box-shadow:0 0 0 15px rgba(37,211,102,0);}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
 }
 
-@media(max-width:500px){
-
-  .hero{
-    min-height:480px;
-  }
-
-  .hero h1{
-    font-size:32px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .services{
-    grid-template-columns:1fr;
-  }
-
-  .why-grid{
-    grid-template-columns:1fr;
-  }
-
-  .btn{
-    width:85%;
-  }
-
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 </style>
+
 </head>
 
 <body>
 
+<!-- HEADER -->
+
+<header>
+
+<nav class="navbar">
+
+<a href="#" class="logo">
+
+<div class="logo-icon">CH</div>
+
+<div class="logo-text">
+<h2>CYBER HUB</h2>
+<span>ONLINE SERVICE CENTER</span>
+</div>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#why">Why Choose Us</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
 <!-- HERO -->
-<section class="hero">
 
-  <div class="hero-content">
+<section class="hero" id="home">
 
-    <div class="badge">
-      📍 Samastipur, Bihar
-    </div>
+<div class="hero-content">
 
-    <h1>
-      Welcome to <span>Cyber Hub</span>
-    </h1>
+<div class="location">
+📍 Samastipur, Bihar
+</div>
 
-    <p>
-      Your Trusted Online & Computer Service Center
-      <br>
-      Fast • Reliable • Digital Services
-    </p>
+<h1>
+Welcome to <span>Cyber Hub</span>
+</h1>
 
-    <div class="hero-buttons">
+<div class="hero-subtitle">
+Your Trusted Online & Computer Service Center
+</div>
 
-      <a href="https://wa.me/918873301032"
-         target="_blank"
-         class="btn whatsapp">
-         💬 WhatsApp
-      </a>
+<p class="hero-description">
+Fast • Reliable • Affordable Digital Services
+<br>
+Online Forms, Computer Services, Documents, Printing,
+Photo & Design and many more services under one roof.
+</p>
 
-      <a href="tel:+918873301032"
-         class="btn call">
-         📞 Call Now
-      </a>
+<p class="founder">
+👨‍💼 Founder: <span>Rdx Abhishek</span>
+</p>
 
-      <a href="https://www.instagram.com/abhi.cyber_hub/"
-         target="_blank"
-         class="btn instagram">
-         📸 Instagram
-      </a>
+<div class="buttons">
 
-    </div>
+<a class="btn whatsapp"
+href="https://wa.me/918873301032"
+target="_blank">
+💬 WhatsApp
+</a>
 
-  </div>
+<a class="btn call"
+href="tel:+918873301032">
+📞 Call Now
+</a>
 
-</section>
-
-
-<!-- EXISTING WEBSITE IMAGE -->
-
-<div class="website-image">
-
-  <img
-    src="cyber-hub-website-image.png"
-    alt="Cyber Hub Online Center Samastipur Bihar Services">
+<a class="btn instagram"
+href="https://www.instagram.com/abhi.cyber_hub/"
+target="_blank">
+📸 Instagram
+</a>
 
 </div>
+
+</div>
+
+</section>
 
 
 <!-- SERVICES -->
 
-<section class="section">
+<section id="services">
 
-  <h2 class="section-title">
-    Our Services
-  </h2>
+<div class="container">
 
-  <p class="section-subtitle">
-    All your essential online and digital services at one place.
-  </p>
+<div class="section-title">
 
-  <div class="services">
+<h2>Our Services</h2>
 
-    <div class="card">
-      <div class="icon">📝</div>
-      <h3>Online Form Services</h3>
-      <p>
-        Online applications, registrations and other online form services.
-      </p>
-    </div>
+<p>All your digital and computer related work at one place</p>
 
-    <div class="card">
-      <div class="icon">🎓</div>
-      <h3>Education Services</h3>
-      <p>
-        Education-related online services and application assistance.
-      </p>
-    </div>
+</div>
 
-    <div class="card">
-      <div class="icon">📄</div>
-      <h3>Document Services</h3>
-      <p>
-        Document related digital work and online assistance.
-      </p>
-    </div>
+<div class="services-grid">
 
-    <div class="card">
-      <div class="icon">🖨️</div>
-      <h3>Printing Services</h3>
-      <p>
-        Printing and other document-related services.
-      </p>
-    </div>
+<div class="service-card">
 
-    <div class="card">
-      <div class="icon">📸</div>
-      <h3>Photo & Design</h3>
-      <p>
-        Photo editing, digital design and creative services.
-      </p>
-    </div>
+<div class="service-icon">📝</div>
 
-    <div class="card">
-      <div class="icon">💻</div>
-      <h3>Computer Services</h3>
-      <p>
-        Computer-related digital services and assistance.
-      </p>
-    </div>
+<h3>Online Form</h3>
 
-  </div>
+<p>
+Online applications, registrations,
+admission forms and other online work.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">💻</div>
+
+<h3>Computer Services</h3>
+
+<p>
+Computer related work, typing,
+printing and digital assistance.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📄</div>
+
+<h3>Document Services</h3>
+
+<p>
+Document preparation, scanning,
+PDF work and online document assistance.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🖨️</div>
+
+<h3>Printing</h3>
+
+<p>
+Print, photocopy, scan and other
+printing related services.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📸</div>
+
+<h3>Photo & Design</h3>
+
+<p>
+Photo editing, digital design,
+poster and creative work.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🎓</div>
+
+<h3>Education Services</h3>
+
+<p>
+Online admission, exam forms,
+education related digital services.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🌐</div>
+
+<h3>Digital Services</h3>
+
+<p>
+Various online and digital services
+for your everyday requirements.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📱</div>
+
+<h3>Online Assistance</h3>
+
+<p>
+Get help with online processes
+and digital applications.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- WHY CYBER HUB -->
+<!-- WHY CHOOSE US -->
 
-<section class="section why">
+<section class="why" id="why">
 
-  <h2 class="section-title">
-    Why Choose Cyber Hub?
-  </h2>
+<div class="container">
 
-  <p class="section-subtitle">
-    Simple, convenient and professional digital services.
-  </p>
+<div class="section-title">
 
-  <div class="why-grid">
+<h2>Why Choose Cyber Hub?</h2>
 
-    <div class="why-card">
-      ⚡
-      <strong>Quick Service</strong>
-    </div>
+<p>We focus on fast and reliable service</p>
 
-    <div class="why-card">
-      🔒
-      <strong>Secure Service</strong>
-    </div>
+</div>
 
-    <div class="why-card">
-      💰
-      <strong>Affordable Service</strong>
-    </div>
+<div class="why-grid">
 
-    <div class="why-card">
-      🤝
-      <strong>Customer Support</strong>
-    </div>
+<div class="why-card">
+<span>⚡</span>
+<strong>Fast Service</strong>
+Quick and efficient work.
+</div>
 
-  </div>
+<div class="why-card">
+<span>🛡️</span>
+<strong>Secure Service</strong>
+Your documents and work are handled carefully.
+</div>
+
+<div class="why-card">
+<span>💰</span>
+<strong>Affordable Price</strong>
+Reasonable pricing for digital services.
+</div>
+
+<div class="why-card">
+<span>🤝</span>
+<strong>Customer Support</strong>
+Friendly assistance whenever you need it.
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
 <!-- ABOUT -->
 
-<section class="section">
+<section class="about" id="about">
 
-  <h2 class="section-title">
-    About Cyber Hub
-  </h2>
+<div class="container">
 
-  <p class="about">
+<div class="section-title">
 
-    <strong>Cyber Hub Online Center</strong> is a digital and
-    computer service center serving customers in
-    <strong>Samastipur, Bihar</strong>.
+<h2>About Cyber Hub</h2>
 
-    We provide online form, education, document, printing,
-    photo & design and computer-related services at one place.
+</div>
 
-    For service enquiries, contact us through WhatsApp or phone.
+<div class="about-box">
 
-  </p>
+<p>
+<strong>Cyber Hub Online Center</strong> is an online and
+computer service center based in <strong>Samastipur, Bihar</strong>.
+</p>
+
+<p>
+We provide online, digital, computer, document, printing,
+photo, design and education related services at one place.
+</p>
+
+<p>
+Our aim is to make digital services easier, faster and
+more convenient for everyone.
+</p>
+
+<p>
+<strong>Founder: Rdx Abhishek</strong>
+</p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -584,66 +882,96 @@ footer h3{
 
 <section class="cta">
 
-  <h2>
-    Need an Online Service?
-  </h2>
+<div class="container">
 
-  <p>
-    Contact Cyber Hub today for your digital service requirements.
-  </p>
+<h2>Need an Online Service?</h2>
 
-  <a
-    href="https://wa.me/918873301032"
-    target="_blank"
-    class="btn whatsapp">
-    💬 Chat on WhatsApp
-  </a>
+<p>
+Contact Cyber Hub today for fast and reliable digital services.
+</p>
+
+<div class="buttons">
+
+<a class="btn whatsapp"
+href="https://wa.me/918873301032"
+target="_blank">
+💬 Chat on WhatsApp
+</a>
+
+<a class="btn call"
+href="tel:+918873301032">
+📞 Call Now
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- FAQ -->
+<!-- CONTACT -->
 
-<section class="section">
+<section id="contact">
 
-  <h2 class="section-title">
-    Frequently Asked Questions
-  </h2>
+<div class="container">
 
-  <div class="faq">
+<div class="section-title">
 
-    <details>
-      <summary>
-        Where is Cyber Hub located?
-      </summary>
+<h2>Contact Us</h2>
 
-      <p>
-        Cyber Hub is located in Samastipur, Bihar.
-      </p>
-    </details>
+<p>Get in touch with Cyber Hub</p>
 
-    <details>
-      <summary>
-        What services does Cyber Hub provide?
-      </summary>
+</div>
 
-      <p>
-        We provide online form, education, document,
-        printing, photo & design and computer services.
-      </p>
-    </details>
+<div class="contact-grid">
 
-    <details>
-      <summary>
-        How can I contact Cyber Hub?
-      </summary>
+<div class="contact-card">
 
-      <p>
-        You can contact us through WhatsApp or phone.
-      </p>
-    </details>
+<div class="icon">📞</div>
 
-  </div>
+<h3>Call Us</h3>
+
+<p>
+<a href="tel:+918873301032">
+8873301032
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">💬</div>
+
+<h3>WhatsApp</h3>
+
+<p>
+<a href="https://wa.me/918873301032"
+target="_blank">
+Chat With Us
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">📍</div>
+
+<h3>Location</h3>
+
+<p>
+Samastipur, Bihar, India
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -652,32 +980,107 @@ footer h3{
 
 <footer>
 
-  <h3>Cyber Hub Online Center</h3>
+<div class="footer-grid">
 
-  <p>
-    📍 Samastipur, Bihar
-  </p>
+<div>
 
-  <p>
-    📞 8873301032
-  </p>
+<h3>CYBER HUB</h3>
 
-  <p>
-    © 2026 Cyber Hub. All Rights Reserved.
-  </p>
+<p>
+Online & Computer Service Center
+</p>
+
+<p>
+Samastipur, Bihar
+</p>
+
+<p>
+Fast • Reliable • Affordable Digital Services
+</p>
+
+<div class="social">
+
+<a href="https://www.instagram.com/abhi.cyber_hub/"
+target="_blank">
+📸
+</a>
+
+<a href="https://wa.me/918873301032"
+target="_blank">
+💬
+</a>
+
+<a href="tel:+918873301032">
+📞
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>Important Links</h3>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#why">Why Choose Us</a></li>
+<li><a href="#contact">Contact Us</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>Our Services</h3>
+
+<ul>
+
+<li>Online Form</li>
+<li>Computer Services</li>
+<li>Document Services</li>
+<li>Printing</li>
+<li>Photo & Design</li>
+<li>Education Services</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Cyber Hub Online Center, Samastipur, Bihar.
+All Rights Reserved.
+
+<br>
+
+Designed with ❤️ by Rdx Abhishek
+
+</div>
 
 </footer>
 
 
 <!-- FLOATING WHATSAPP -->
 
-<a
-  href="https://wa.me/918873301032"
-  target="_blank"
-  class="floating-whatsapp"
-  aria-label="Contact Cyber Hub on WhatsApp">
-  💬
+<a class="float-whatsapp"
+href="https://wa.me/918873301032"
+target="_blank"
+aria-label="Chat with Cyber Hub on WhatsApp">
+
+💬
+
 </a>
+
 
 </body>
 </html>
