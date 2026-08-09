@@ -1,251 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cyber Hub Samastipur | Online & Computer Services</title>
+<title>Cyber Hub Samastipur | Online & Computer Services</title>
 
-  <meta name="description" content="Cyber Hub Samastipur, Bihar - Online form, computer, document, printing, photo & design and digital services. Contact Cyber Hub for online services.">
+<meta name="description" content="Cyber Hub Online Center, Samastipur Bihar - Online Form, Education, Document, Printing, Photo & Design and Computer Services.">
 
-  <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://mridul2567.github.io/cyber-hub/">
+<link rel="canonical" href="https://mridul2567.github.io/cyber-hub/">
 
-  <!-- Local Business information for search engines -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Cyber Hub",
-    "alternateName": "Cyber Hub Online Center",
-    "url": "https://mridul2567.github.io/cyber-hub/",
-    "telephone": "+91-8873301032",
-    "description": "Cyber Hub provides online, computer, document, printing, photo and digital services in Samastipur, Bihar.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Samastipur",
-      "addressRegion": "Bihar",
-      "addressCountry": "IN"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Samastipur"
-    },
-    "sameAs": [
-      "https://www.instagram.com/abhi.cyber_hub/"
-    ]
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Cyber Hub",
+  "alternateName":"Cyber Hub Online Center",
+  "url":"https://mridul2567.github.io/cyber-hub/",
+  "telephone":"+91-8873301032",
+  "description":"Online and computer services in Samastipur, Bihar.",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Samastipur",
+    "addressRegion":"Bihar",
+    "addressCountry":"IN"
+  },
+  "areaServed":{
+    "@type":"City",
+    "name":"Samastipur"
+  },
+  "sameAs":[
+    "https://www.instagram.com/abhi.cyber_hub/"
+  ]
+}
+</script>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#061633;
+  color:white;
+}
+
+/* HERO */
+
+.hero{
+  min-height:430px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:50px 20px;
+  background:
+    linear-gradient(135deg,#061633,#073b91,#061633);
+}
+
+.hero-content{
+  max-width:900px;
+}
+
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.2);
+  padding:9px 18px;
+  border-radius:30px;
+  margin-bottom:20px;
+  font-size:14px;
+}
+
+.hero h1{
+  font-size:52px;
+  margin-bottom:15px;
+  font-weight:800;
+}
+
+.hero h1 span{
+  color:#35d3ff;
+}
+
+.hero p{
+  font-size:19px;
+  line-height:1.7;
+  color:#dbeafe;
+  margin-bottom:28px;
+}
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:14px 25px;
+  border-radius:30px;
+  font-weight:bold;
+  color:white;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+}
+
+.whatsapp{
+  background:#25D366;
+}
+
+.call{
+  background:#1677ff;
+}
+
+.instagram{
+  background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+
+/* IMAGE */
+
+.website-image{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.website-image img{
+  width:100%;
+  display:block;
+}
+
+/* SECTION */
+
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.section-title{
+  font-size:34px;
+  margin-bottom:12px;
+}
+
+.section-subtitle{
+  color:#b9c7df;
+  margin-bottom:35px;
+  line-height:1.6;
+}
+
+/* SERVICES */
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:linear-gradient(145deg,#102a57,#071b3b);
+  padding:28px 20px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:#35d3ff;
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+.card p{
+  color:#b9c7df;
+  line-height:1.6;
+  font-size:14px;
+}
+
+/* WHY US */
+
+.why{
+  background:#071b3b;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.why-card{
+  padding:25px 15px;
+  background:#0c2853;
+  border-radius:15px;
+}
+
+.why-card strong{
+  display:block;
+  margin-top:10px;
+}
+
+/* ABOUT */
+
+.about{
+  max-width:900px;
+  margin:auto;
+  line-height:1.8;
+  color:#dbeafe;
+}
+
+/* CTA */
+
+.cta{
+  padding:65px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#0754c9,#08285b);
+}
+
+.cta h2{
+  font-size:35px;
+  margin-bottom:15px;
+}
+
+.cta p{
+  color:#dbeafe;
+  margin-bottom:25px;
+}
+
+/* FAQ */
+
+.faq{
+  max-width:800px;
+  margin:auto;
+  text-align:left;
+}
+
+details{
+  background:#0d2851;
+  margin:12px 0;
+  padding:18px 20px;
+  border-radius:12px;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:bold;
+}
+
+details p{
+  color:#cbd5e1;
+  margin-top:12px;
+  line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+  background:#030d20;
+  text-align:center;
+  padding:30px 15px;
+  color:#aebbd0;
+}
+
+footer h3{
+  color:white;
+  margin-bottom:8px;
+}
+
+/* FLOATING WHATSAPP */
+
+.floating-whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:29px;
+  box-shadow:0 5px 20px rgba(0,0,0,.4);
+  z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .hero h1{
+    font-size:38px;
   }
-  </script>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-    body {
-      margin: 0;
-      background: #061633;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+  .why-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-    .website {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-    }
+}
 
-    .website img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+@media(max-width:500px){
 
-    .seo-section {
-      padding: 30px 18px;
-      max-width: 900px;
-      margin: auto;
-    }
+  .hero{
+    min-height:480px;
+  }
 
-    h1 {
-      font-size: 32px;
-      margin: 5px 0 10px;
-    }
+  .hero h1{
+    font-size:32px;
+  }
 
-    h2 {
-      font-size: 23px;
-      margin-top: 28px;
-    }
+  .hero p{
+    font-size:16px;
+  }
 
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #e5e7eb;
-    }
+  .services{
+    grid-template-columns:1fr;
+  }
 
-    .location {
-      font-weight: bold;
-      font-size: 18px;
-    }
+  .why-grid{
+    grid-template-columns:1fr;
+  }
 
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin: 20px 0;
-    }
+  .btn{
+    width:85%;
+  }
 
-    .service {
-      background: #10264d;
-      padding: 12px 16px;
-      border-radius: 10px;
-      font-weight: bold;
-    }
+}
 
-    .buttons {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 24px;
-      border-radius: 30px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-    }
-
-    .whatsapp {
-      background: #25D366;
-    }
-
-    .call {
-      background: #2563eb;
-    }
-
-    .instagram {
-      background: linear-gradient(
-        45deg,
-        #f09433,
-        #e6683c,
-        #dc2743,
-        #cc2366,
-        #bc1888
-      );
-    }
-
-    footer {
-      padding: 25px 15px;
-      background: #041025;
-      color: #bfc8d8;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 26px;
-      }
-
-      .btn {
-        width: 85%;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <!-- Existing Cyber Hub design -->
-  <div class="website">
-    <img
-      src="cyber-hub-website-image.png"
-      alt="Cyber Hub Online Center Samastipur Bihar"
-    >
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="badge">
+      📍 Samastipur, Bihar
+    </div>
+
+    <h1>
+      Welcome to <span>Cyber Hub</span>
+    </h1>
+
+    <p>
+      Your Trusted Online & Computer Service Center
+      <br>
+      Fast • Reliable • Digital Services
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="https://wa.me/918873301032"
+         target="_blank"
+         class="btn whatsapp">
+         💬 WhatsApp
+      </a>
+
+      <a href="tel:+918873301032"
+         class="btn call">
+         📞 Call Now
+      </a>
+
+      <a href="https://www.instagram.com/abhi.cyber_hub/"
+         target="_blank"
+         class="btn instagram">
+         📸 Instagram
+      </a>
+
+    </div>
+
   </div>
 
-  <!-- SEO-friendly business content -->
-  <section class="seo-section">
+</section>
 
-    <h1>Cyber Hub Online Center</h1>
 
-    <p class="location">
-      📍 Samastipur, Bihar
-    </p>
+<!-- EXISTING WEBSITE IMAGE -->
 
-    <p>
-      Welcome to <strong>Cyber Hub</strong>, an online and computer
-      service center in <strong>Samastipur, Bihar</strong>.
-      We provide various online, digital and computer-related services
-      at one place.
-    </p>
+<div class="website-image">
 
-    <h2>Our Services</h2>
+  <img
+    src="cyber-hub-website-image.png"
+    alt="Cyber Hub Online Center Samastipur Bihar Services">
 
-    <div class="services">
-      <div class="service">Online Form</div>
-      <div class="service">Computer Services</div>
-      <div class="service">Document Services</div>
-      <div class="service">Printing</div>
-      <div class="service">Photo & Design</div>
-      <div class="service">Digital Services</div>
-      <div class="service">Education Services</div>
+</div>
+
+
+<!-- SERVICES -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    Our Services
+  </h2>
+
+  <p class="section-subtitle">
+    All your essential online and digital services at one place.
+  </p>
+
+  <div class="services">
+
+    <div class="card">
+      <div class="icon">📝</div>
+      <h3>Online Form Services</h3>
+      <p>
+        Online applications, registrations and other online form services.
+      </p>
     </div>
 
-    <p>
-      Need online forms, document work, printing, photo and design,
-      computer services or other digital services?
-      Contact <strong>Cyber Hub Samastipur</strong>.
-    </p>
-
-    <div class="buttons">
-
-      <!-- WhatsApp -->
-      <a
-        href="https://wa.me/918873301032"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn whatsapp"
-      >
-        💬 WhatsApp
-      </a>
-
-      <!-- Phone -->
-      <a
-        href="tel:+918873301032"
-        class="btn call"
-      >
-        📞 Call Now
-      </a>
-
-      <!-- Instagram -->
-      <a
-        href="https://www.instagram.com/abhi.cyber_hub/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn instagram"
-      >
-        📸 Instagram
-      </a>
-
+    <div class="card">
+      <div class="icon">🎓</div>
+      <h3>Education Services</h3>
+      <p>
+        Education-related online services and application assistance.
+      </p>
     </div>
 
-  </section>
+    <div class="card">
+      <div class="icon">📄</div>
+      <h3>Document Services</h3>
+      <p>
+        Document related digital work and online assistance.
+      </p>
+    </div>
 
-  <footer>
-    © 2026 Cyber Hub Online Center · Samastipur, Bihar
-  </footer>
+    <div class="card">
+      <div class="icon">🖨️</div>
+      <h3>Printing Services</h3>
+      <p>
+        Printing and other document-related services.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📸</div>
+      <h3>Photo & Design</h3>
+      <p>
+        Photo editing, digital design and creative services.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💻</div>
+      <h3>Computer Services</h3>
+      <p>
+        Computer-related digital services and assistance.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY CYBER HUB -->
+
+<section class="section why">
+
+  <h2 class="section-title">
+    Why Choose Cyber Hub?
+  </h2>
+
+  <p class="section-subtitle">
+    Simple, convenient and professional digital services.
+  </p>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+      ⚡
+      <strong>Quick Service</strong>
+    </div>
+
+    <div class="why-card">
+      🔒
+      <strong>Secure Service</strong>
+    </div>
+
+    <div class="why-card">
+      💰
+      <strong>Affordable Service</strong>
+    </div>
+
+    <div class="why-card">
+      🤝
+      <strong>Customer Support</strong>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    About Cyber Hub
+  </h2>
+
+  <p class="about">
+
+    <strong>Cyber Hub Online Center</strong> is a digital and
+    computer service center serving customers in
+    <strong>Samastipur, Bihar</strong>.
+
+    We provide online form, education, document, printing,
+    photo & design and computer-related services at one place.
+
+    For service enquiries, contact us through WhatsApp or phone.
+
+  </p>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <h2>
+    Need an Online Service?
+  </h2>
+
+  <p>
+    Contact Cyber Hub today for your digital service requirements.
+  </p>
+
+  <a
+    href="https://wa.me/918873301032"
+    target="_blank"
+    class="btn whatsapp">
+    💬 Chat on WhatsApp
+  </a>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    Frequently Asked Questions
+  </h2>
+
+  <div class="faq">
+
+    <details>
+      <summary>
+        Where is Cyber Hub located?
+      </summary>
+
+      <p>
+        Cyber Hub is located in Samastipur, Bihar.
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        What services does Cyber Hub provide?
+      </summary>
+
+      <p>
+        We provide online form, education, document,
+        printing, photo & design and computer services.
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        How can I contact Cyber Hub?
+      </summary>
+
+      <p>
+        You can contact us through WhatsApp or phone.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h3>Cyber Hub Online Center</h3>
+
+  <p>
+    📍 Samastipur, Bihar
+  </p>
+
+  <p>
+    📞 8873301032
+  </p>
+
+  <p>
+    © 2026 Cyber Hub. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  href="https://wa.me/918873301032"
+  target="_blank"
+  class="floating-whatsapp"
+  aria-label="Contact Cyber Hub on WhatsApp">
+  💬
+</a>
 
 </body>
 </html>
